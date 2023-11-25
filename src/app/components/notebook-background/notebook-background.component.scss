@@ -1,0 +1,74 @@
+.color-scheme {
+  --notebook-background-color: rgba(60, 0, 255, 0.7);
+  --paper-background-color: rgba(255, 0, 0, 0.7);
+  --notebook-background-line-size: 0.12em;
+  --notebook-background-size: 3em;
+}
+
+.background {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+.grid-background {
+  background: var(--paper-background-color);
+  background-image: linear-gradient(
+      var(--notebook-background-color) var(--notebook-background-line-size),
+      transparent var(--notebook-background-line-size)
+    ),
+    linear-gradient(
+      90deg,
+      var(--notebook-background-color) var(--notebook-background-line-size),
+      transparent var(--notebook-background-line-size)
+    );
+  background-size: var(--notebook-background-size) var(--notebook-background-size);
+}
+
+.cyan-theme {
+  --notebook-background-color: #EAF7FF;
+  --paper-background-color: #fff
+}
+
+.light-beige-theme {
+  --notebook-background-color: #F6F1EA;
+  --paper-background-color: #F6F1EA
+}
+
+.pale-aqua-theme {
+  --notebook-background-color: #EDF6F6;
+  --paper-background-color: #EDF6F6
+}
+
+.white-theme {
+  --notebook-background-color: #fff;
+  --paper-background-color: #fff
+}
+
+.ivory-theme {
+  --notebook-background-color: #C9C9AC;
+  --paper-background-color: #FBF4DA
+}
+
+.grayish-blue-theme {
+  --notebook-background-color: #BBCDF3;
+  --paper-background-color: #9DBAF4
+}
+
+.medium-size {
+  --notebook-background-size: 4em;
+}
+
+.small-size {
+  --notebook-background-size: 2em;
+}
+
+.large-size {
+  --notebook-background-size: 6em;
+}
