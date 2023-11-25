@@ -1,0 +1,7 @@
+{
+  "name": "Functional diversity calculator app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
