@@ -1,0 +1,27 @@
+:host {
+  display: block;
+}
+
+.hand-button-container {
+  position: relative;
+  & .hand-button-img {
+    position: absolute;
+    width: 3rem;
+    right: 0;
+    bottom: -2rem;
+    z-index: 2;
+  }
+}
+
+.hand-button {
+  --background: #d08267;
+  --background-activated: #d0826777;
+  --background-hover: #d0826777;
+  --color: white;
+  font-weight: 700;
+  font-size: 1.4rem;
+
+  & span {
+    padding: 0rem 2.5rem;
+  }
+}
