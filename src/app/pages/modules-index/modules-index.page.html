@@ -1,0 +1,22 @@
+<ion-content [fullscreen]="true">
+  <app-notebook-background theme="light-beige" />
+  <main class="over-background">
+    <app-back-page-button theme="blue" link="/inclusion-in-the-classroom" />
+
+    <section class="container">
+      <app-badge-title title="MÓDULOS" />
+
+      <div class="content">
+        @for (module of modules; track $index) {
+        <app-module-card
+          [theme]="module.theme"
+          [title]="module.title"
+          [description]="module.description"
+          [link]="module.link"
+        />
+        }
+      </div>
+    </section>
+    <app-next-page-button theme="yellow" link="/modules-index" />
+  </main>
+</ion-content>

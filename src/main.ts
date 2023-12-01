@@ -1,8 +1,8 @@
-import { enableProdMode, importProvidersFrom } from '@angular/core';
+import { enableProdMode } from '@angular/core';
 
 import { environment } from './environments/environment';
 import { AppComponent } from './app/app.component';
-import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
+import { bootstrapApplication } from '@angular/platform-browser';
 import {
   provideIonicAngular,
   IonicRouteStrategy,
@@ -17,6 +17,7 @@ import {
 } from '@angular/router';
 
 import { appRoutes } from './app/app.routes';
+import { UserStateService } from './app/services/user-state.service';
 
 if (environment.production) {
   enableProdMode();
@@ -25,12 +26,14 @@ if (environment.production) {
 bootstrapApplication(AppComponent, {
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    // importProvidersFrom(BrowserModule),
     provideRouter(
       appRoutes,
       withPreloading(PreloadAllModules),
       withComponentInputBinding()
     ),
     provideIonicAngular({ mode: 'ios' }),
+
+    // services
+    UserStateService,
   ],
 }).catch((err) => console.log(err));
