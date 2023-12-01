@@ -1,4 +1,30 @@
 <ion-content [fullscreen]="true">
   <app-notebook-background theme="cyan" />
-  <main class="over-background">s</main>
+  <main class="over-background">
+    <section class="container">
+      <ion-img
+        class="inclusion-in-the-classroom-img"
+        src="assets/images/inclusion-in-the-classroom.png"
+        alt="Inclusion in the classroom"
+      />
+      <div class="img-pane">
+        <ion-img
+          class="unipamplona-img"
+          src="assets/images/unipamplona.png"
+          alt="Occupational Therapy"
+        />
+        <ion-img
+          class="occupational-therapy-img"
+          src="assets/images/occupational-therapy.png"
+          alt="Occupational Therapy"
+        />
+      </div>
+      <p class="message">
+        Un recurso para estudiantes y educadores sobre la Diversidad Funcional
+        en la Universidad de Pamplona
+      </p>
+    </section>
+
+    <app-next-page-button theme="blue" link="/inclusion-in-the-classroom" />
+  </main>
 </ion-content>

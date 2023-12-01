@@ -1,3 +1,39 @@
 .over-background {
   z-index: 1;
 }
+
+.container {
+  padding: 6rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-pane {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.inclusion-in-the-classroom-img {
+  height: 20rem;
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.occupational-therapy-img {
+  height: 17rem;
+}
+
+.unipamplona-img {
+  height: 17rem;
+}
+
+.message {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1.4rem;
+}
