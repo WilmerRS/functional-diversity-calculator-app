@@ -1,0 +1,13 @@
+<ion-fab
+  [ngClass]="{
+    'blue-theme': theme === 'blue',
+    'yellow-theme': theme === 'yellow'
+  }"
+  class="button-slot"
+  vertical="top"
+  horizontal="start"
+>
+  <ion-fab-button [routerLink]="link" class="back-page-button">
+    <ion-icon name="chevron-back-outline" class="icon-large" />
+  </ion-fab-button>
+</ion-fab>

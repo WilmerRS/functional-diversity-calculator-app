@@ -1,0 +1,43 @@
+:host {
+  display: block;
+
+  --button-color: rgba(42, 62, 151);
+  --button-color-hover: rgba(42, 62, 151, 0.8);
+  --button-color-activated: rgba(42, 62, 151, 0.6);
+  --icon-color: white;
+}
+
+.button-slot {
+  margin-top: 0.6rem;
+  margin-left: 0.6rem;
+}
+
+.back-page-button {
+  --background: var(--button-color);
+  --background-activated: var(--button-color-activated);
+  --background-hover: var(--button-color-hover);
+  --color: var(--icon-color);
+
+  width: 70px;
+  height: 70px;
+  position: fixed;
+}
+
+.icon-large {
+  width: 50px;
+  height: 50px;
+}
+
+.blue-theme {
+  --button-color: #042a89;
+  --button-color-hover: #042a8933;
+  --button-color-activated: #042a8933;
+  --color: white;
+}
+
+.yellow-theme {
+  --button-color: #fbbb0b;
+  --button-color-hover: #fbbb0b33;
+  --button-color-activated: #fbbb0b33;
+  --color: white;
+}
