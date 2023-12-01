@@ -1,0 +1,64 @@
+:host {
+  display: block;
+  --module-background-color: #f2b88c;
+}
+
+.module-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 3rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  text-shadow: -3px 0 var(--module-background-color),
+    0 3px var(--module-background-color), 3px 0 var(--module-background-color),
+    0 -3px var(--module-background-color);
+
+  height: 12rem;
+  width: 16rem;
+
+  & p {
+    margin: 0;
+  }
+
+  & .module-card-img {
+    position: absolute;
+    width: 16rem;
+    top: 0;
+    z-index: -1;
+  }
+  & .module-card-hand-img {
+    position: absolute;
+    width: 4rem;
+    right: 0.4rem;
+    bottom: 0.6rem;
+    z-index: 0;
+  }
+}
+
+.orange-theme {
+  --module-background-color: #F3AB80;
+}
+
+.cyan-theme {
+  --module-background-color: #BEECF8;
+}
+
+.blue-theme {
+  --module-background-color: #8FAAF9;
+}
+
+.beige-theme {
+  --module-background-color: #F8D3BE;
+}
+
+.green-theme {
+  --module-background-color: #77F957;
+}
+
+.yellow-theme {
+  --module-background-color: #EDCF70;
+}

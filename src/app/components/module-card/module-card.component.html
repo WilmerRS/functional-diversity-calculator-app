@@ -1,0 +1,28 @@
+<section
+  [routerLink]="link"
+  class="module-card"
+  [ngClass]="{
+    'orange-theme': theme === 'orange',
+    'cyan-theme': theme === 'cyan',
+    'blue-theme': theme === 'blue',
+    'beige-theme': theme === 'beige',
+    'green-theme': theme === 'green',
+    'yellow-theme': theme === 'yellow'
+  }"
+>
+  <ion-img
+    class="module-card-img"
+    [src]="'assets/images/module-card/module-card-' + theme + '.png'"
+  />
+  <ion-img
+    class="module-card-hand-img"
+    src="assets/images/click-here-hand.png"
+  />
+  <div class="background-img"></div>
+  <div>
+    <span>
+      {{ title }}
+    </span>
+    <p>{{ description }}</p>
+  </div>
+</section>
