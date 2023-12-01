@@ -1,0 +1,65 @@
+:host {
+  display: block;
+
+  --button-color: rgba(42, 62, 151);
+  --button-color-hover: rgba(42, 62, 151, 0.8);
+  --button-color-activated: rgba(42, 62, 151, 0.6);
+  --icon-color: white;
+  --button-border-radius: 2rem;
+}
+
+.menu-button {
+  --background: var(--button-color);
+  --background-activated: var(--button-color-activated);
+  --background-hover: var(--button-color-hover);
+  --border-radius: var(--button-border-radius);
+  --border-width: 3px;
+  --border-color: #000000;
+  --border-style: solid;
+  font-weight: 700;
+  font-size: 1.3rem;
+
+  & .star-img {
+    margin-right: 0.5rem;
+    width: 2.5rem;
+    fill: var(--icon-color);
+  }
+
+  & .menu-button-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.purple-theme {
+  --button-color: #bbbaff;
+  --button-color-hover: #bbbaff88;
+  --button-color-activated: #bbbaff77;
+  --color: black;
+  --icon-color: #383780;
+}
+
+.orange-theme {
+  --button-color: #ffbd59;
+  --button-color-hover: #ffbd5988;
+  --button-color-activated: #ffbd5977;
+  --color: black;
+  --icon-color: #ff854d;
+}
+
+.cyan-theme {
+  --button-color: #b2edfa;
+  --button-color-hover: #b2edfa88;
+  --button-color-activated: #b2edfa77;
+  --color: black;
+  --icon-color: #0083ca;
+}
+
+.yellow-theme {
+  --button-color: #ffe780;
+  --button-color-hover: #ffe78088;
+  --button-color-activated: #ffe78077;
+  --color: black;
+  --icon-color: #ffaa00;
+}

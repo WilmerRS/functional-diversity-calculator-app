@@ -1,0 +1,17 @@
+<ion-button
+  [routerLink]="link"
+  [ngClass]="{
+    'orange-theme': theme === 'orange',
+    'cyan-theme': theme === 'cyan',
+    'purple-theme': theme === 'purple',
+    'yellow-theme': theme === 'yellow'
+  }"
+  class="menu-button ion-text-wrap"
+>
+  <span class="menu-button-content">
+    <app-star-icon class="star-img" />
+    <span class="text">
+      {{ text }}
+    </span>
+  </span>
+</ion-button>
