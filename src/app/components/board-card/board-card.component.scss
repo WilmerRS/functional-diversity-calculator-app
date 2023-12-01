@@ -1,0 +1,42 @@
+:host {
+  display: block;
+}
+
+.board-card {
+  border-radius: 2rem;
+  border: 3px solid #000000;
+  padding: 2.5rem 3rem 1rem 3rem;
+  min-width: 26rem;
+  max-width: 26rem;
+  min-height: 8rem;
+  background-color: #F2B88C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.content {
+  z-index: 2;
+}
+
+.tape {
+  position: absolute;
+  top: -2.5rem;
+  width: 25rem;
+}
+
+.pencil {
+  position: absolute;
+  bottom: 2rem;
+  left: -5rem;
+  width: 9rem;
+}
+
+.hands {
+  position: absolute;
+  bottom: 2rem;
+  right: -6.5rem;
+  width: 10rem;
+}
