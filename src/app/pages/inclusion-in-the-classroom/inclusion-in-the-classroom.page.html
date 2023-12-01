@@ -1,0 +1,32 @@
+<ion-content [fullscreen]="true">
+  <app-notebook-background theme="cyan" />
+  <main class="over-background">
+    <section class="container">
+      <div class="board-card">
+        <app-board-card>
+          <h1>"INCLUSIÓN AL AULA"</h1>
+        </app-board-card>
+      </div>
+      <div class="content">
+        <div class="menu">
+          <app-menu-button theme="purple" text="Cambios ocupacionales" />
+          <app-menu-button theme="orange" text="Diversidad funcional" />
+          <app-menu-button theme="cyan" text="Universitarios" />
+          <app-menu-button theme="yellow" text="Autor y créditos" link="/author-and-credits" />
+        </div>
+        <div class="sign-in">
+          <h1>Digite Su Córreo Institucional</h1>
+          <app-email-input [emailControl]="emailControl" />
+        </div>
+      </div>
+      <div class="occupational-therapy">
+        <ion-img
+          class="occupational-therapy-img"
+          src="assets/images/occupational-therapy.png"
+          alt="Occupational therapy"
+        />
+      </div>
+    </section>
+    <app-next-page-button theme="yellow" link="/modules-index" [disabled]="emailControl.invalid" (next)="saveEmailUser()" />
+  </main>
+</ion-content>
