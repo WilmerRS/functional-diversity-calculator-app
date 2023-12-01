@@ -1,0 +1,38 @@
+.container {
+  padding: 15rem 4rem 1rem 6rem;
+}
+
+.content {
+  & .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  & .description {
+    font-size: 1.3rem;
+    margin-top: 3rem;
+  }
+}
+
+.video-player {
+  & video, iframe {
+    width: 100%;
+    height: calc(100vw * 0.4625);
+  }
+}
+
+.background-page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  & .background-page-img {
+    position: absolute;
+    width: 95%;
+    z-index: -1;
+    margin: auto;
+    right: 1rem;
+    left: 1rem;
+    top: 4rem;
+  }
+}

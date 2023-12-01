@@ -1,0 +1,117 @@
+<ion-content [fullscreen]="true">
+  <app-notebook-background theme="cyan" />
+  <main class="over-background">
+    <app-back-page-button theme="blue" link="/modules-index" />
+
+    <section class="background-page">
+      <ion-img
+        class="background-page-img"
+        src="assets/images/yellow-page.png"
+      />
+
+      <div class="container">
+        <section class="content">
+          <h1 class="title">Módulo 2</h1>
+          <p class="description separation">
+            APRECIADO USUARIO, ESTE MÓDULO PERMITE CARACTERIZAR LA POBLACIÓN
+            SEGÚN SUS CARACTERÍSTICAS.
+          </p>
+          <p class="description">
+            TENGA EN CUENTA QUE LA SELECCIÓN DEL TIPO DE DIVERSIDAD LE OFRECERÁ
+            UNA ORIENTACIÓN ESPECIALIZADA EN SU ABORDAJE.
+          </p>
+        </section>
+
+        <form class="student-form" [formGroup]="studentForm">
+          <ion-input
+            label="Nombre"
+            placeholder="Nombre completo"
+            fill="solid"
+            class="form-input"
+            formControlName="name"
+          />
+
+          <ion-select
+            class="form-input"
+            label="Género"
+            placeholder="Género"
+            formControlName="gender"
+          >
+            @for (gender of genders; track $index) {
+            <ion-select-option [value]="gender.name">
+              {{gender.label}}
+            </ion-select-option>
+            }
+          </ion-select>
+
+          <ion-input
+            label="Otra respuesta"
+            placeholder="Otra respuesta"
+            fill="solid"
+            class="form-input"
+            formControlName="otherAnswer"
+          />
+
+          <ion-select
+            class="form-input"
+            label="Tipo de diversidad"
+            placeholder="Tipo de diversidad"
+            formControlName="diversityType"
+          >
+            @for (diversityType of diversityTypes; track $index) {
+            <ion-select-option [value]="diversityType.name">
+              {{diversityType.label}}
+            </ion-select-option>
+            }
+          </ion-select>
+
+          <ion-select
+            class="form-input"
+            label="Semestre"
+            placeholder="Semestre"
+            formControlName="semester"
+          >
+            @for (semester of semesters; track $index) {
+            <ion-select-option [value]="semester">
+              Semestre {{semester}}
+            </ion-select-option>
+            }
+          </ion-select>
+
+          <ion-input
+            label="Carrera"
+            placeholder="Carrera"
+            fill="solid"
+            class="form-input"
+            formControlName="career"
+          />
+          <ion-input
+            label="Facultad"
+            placeholder="Facultad"
+            fill="solid"
+            class="form-input"
+            formControlName="faculty"
+          />
+
+          <ion-select
+            class="form-input"
+            label="Sede"
+            placeholder="Sede"
+            formControlName="venue"
+          >
+            @for (venue of venues; track $index) {
+            <ion-select-option [value]="venue.name">
+              {{venue.label}}
+            </ion-select-option>
+            }
+          </ion-select>
+        </form>
+      </div>
+    </section>
+    <app-next-page-button
+      [disabled]="studentForm.invalid"
+      theme="yellow"
+      link="/modules/module-three"
+    />
+  </main>
+</ion-content>

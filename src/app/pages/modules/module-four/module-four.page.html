@@ -1,0 +1,45 @@
+<ion-content [fullscreen]="true">
+  <app-notebook-background theme="white" />
+  <main class="over-background">
+    <app-back-page-button theme="blue" link="/modules-index" />
+
+    <section class="container">
+      <div class="header">
+        <h1>Módulo 4</h1>
+        <h2>Modo de uso:</h2>
+        <ul>
+          <li>
+            Con un único clic, podrán acceder a una orientación detallada sobre
+            la implementación del (PIAR) y (DUA). Este recurso proporcionará la
+            claridad necesaria para aplicar eficazmente estas estrategias en el
+            aula y realizar ajustes significativos de la siguiente manera:
+          </li>
+          <li>
+            Al ingresar al módulo correspondiente, el usuario podrá clasificar a
+            los estudiantes según las necesidades individuales de cada uno. Como
+            resultado de esta clasificación, se desplegará automáticamente un
+            modelo de intervención diseñado específicamente para cada
+            estudiante.
+          </li>
+          <li>
+            En cada uno de los conceptos abordados, se presenta información
+            detallada de cada ítem. Esto garantiza que el docente o
+            administrativo cuente con una visión integral y precisa de los
+            elementos clave involucrados en el proceso
+          </li>
+        </ul>
+      </div>
+
+      <div class="content">
+        @for (diversity of diversities; track $index) {
+        <ion-img
+          [routerLink]="diversity.link"
+          class="content-module-img"
+          [src]="diversity.image"
+        />
+        }
+      </div>
+    </section>
+    <app-next-page-button theme="yellow" link="/modules/module-five" />
+  </main>
+</ion-content>

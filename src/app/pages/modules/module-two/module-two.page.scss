@@ -1,0 +1,69 @@
+.container {
+  padding: 10rem 4rem 1rem 6rem;
+}
+
+.content {
+  padding-left: 4.3rem;
+  & .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  & .description {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  & .separation {
+    margin-bottom: 0.6rem;
+  }
+}
+
+.background-page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  & .background-page-img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    margin: auto;
+    right: 0rem;
+    left: 0rem;
+    top: 5rem;
+  }
+}
+
+.student-form {
+  margin-top: 2rem;
+  max-height: 23rem;
+  overflow-y: scroll;
+  padding-right: 1rem;
+}
+
+.form-input {
+  --background: #f2b88c;
+  --color: #512c10;
+  --placeholder-color: rgb(167, 110, 66);
+  --placeholder-opacity: 0.8;
+
+  --padding-bottom: 12px;
+  --padding-top: 12px;
+  --padding-start: 1rem;
+  --padding-end: 1rem;
+  --border-radius: 2rem;
+  --border-width: 0px;
+
+  font-weight: 500;
+  font-size: 1.3rem;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1rem;
+
+  &:focus-within {
+    --background: #e3a473;
+    transition: all 0.3s ease-in-out;
+  }
+}

@@ -1,0 +1,62 @@
+.container {
+  padding: 3rem 2rem 1rem;
+}
+
+.title {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1.4rem 1rem;
+  text-align: center;
+  background: #7c6752;
+  color: #fff;
+  border-radius: 1rem;
+}
+
+.page {
+  margin: 1rem 1rem;
+  border: #7c6752 solid 6px;
+  border-radius: 1rem;
+  background-color: #fbf4da;
+  overflow: hidden;
+
+  & header {
+    background-color: #F0B68F;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+
+    display: flex;
+
+    & span {
+      width: 2.3rem;
+      height: 2.3rem;
+      background-color: #F2CD64;
+      border-radius: 6rem;
+      border: #7c6752 solid 5px;
+      margin-right: 0.5rem;
+    }
+  }
+
+  & .card {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem 1rem;
+    border: #7c6752 solid 6px;
+    border-radius: 1rem;
+    background-color: #F0B68F;
+    font-size: 1.2rem;
+
+    &:last-child {
+      margin-bottom: 1rem;
+    }
+
+    &:first-child {
+      margin-top: 1rem;
+    }
+  }
+
+  .intermediate-img {
+    height: 5rem;
+    margin: 0 auto;
+  }
+}

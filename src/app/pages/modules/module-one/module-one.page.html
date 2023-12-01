@@ -1,0 +1,39 @@
+<ion-content [fullscreen]="true">
+  <app-notebook-background theme="cyan" />
+  <main class="over-background">
+    <app-back-page-button theme="blue" link="/modules-index" />
+
+    <section class="background-page">
+      <ion-img class="background-page-img" src="assets/images/blue-page.png" />
+
+      <div class="container">
+        <section class="content">
+          <h1 class="title">Módulo 1</h1>
+          <p class="description">
+            <strong>OBJETIVO:</strong>
+            Sensibilizar a la comunidad universitaria por medio de la
+            presentación del documental en 1 primer módulo comprendiendo el
+            abordaje de terapia ocupacional en esta población.
+          </p>
+        </section>
+        <section class="video-player">
+          <!-- <video controls>
+            <source
+              src="https://www.youtube.com/watch?v=cjdfqXIM-Ko"
+              type="video/mp4"
+            />
+            Tu navegador no soporta videos.
+          </video> -->
+          <iframe
+            src="https://www.youtube.com/embed/cjdfqXIM-Ko?si=S2fV6jg86oUdrQcH"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </section>
+      </div>
+    </section>
+    <app-next-page-button theme="yellow" link="/modules/module-two" />
+  </main>
+</ion-content>
