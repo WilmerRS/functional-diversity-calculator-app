@@ -1,0 +1,26 @@
+:host {
+  display: block;
+}
+
+.email-input {
+  --background: #f2b88c;
+  --color: #512c10;
+  --placeholder-color: rgb(167, 110, 66);
+  --placeholder-opacity: 0.8;
+
+  --padding-bottom: 12px;
+  --padding-top: 12px;
+  --padding-start: 1rem;
+  --padding-end: 1rem;
+  --border-radius: 2rem;
+  --border-width: 0px;
+
+  font-weight: 500;
+  font-size: 1.3rem;
+  transition: all 0.3s ease-in-out;
+
+  &:focus-within {
+    --background: #e3a473;
+    transition: all 0.3s ease-in-out;
+  }
+}
