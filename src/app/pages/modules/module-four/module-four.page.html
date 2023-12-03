@@ -34,6 +34,7 @@
         @for (diversity of diversities; track $index) {
         <ion-img
           [routerLink]="diversity.link"
+          [ngClass]="{'disabled': diversity?.disabled}"
           class="content-module-img"
           [src]="diversity.image"
         />
