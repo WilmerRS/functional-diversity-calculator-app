@@ -17,7 +17,6 @@ import { NotebookBackgroundComponent } from 'src/app/components/notebook-backgro
     IonContent,
     IonRouterLink,
     RouterLink,
-    NgClass,
     NotebookBackgroundComponent,
     NextPageButtonComponent,
     BackPageButtonComponent,
@@ -27,7 +26,6 @@ export class ModuleFourPage {
   readonly diversities: {
     image: string,
     link: string,
-    disabled?: boolean,
   }[] =[
     {
       image: 'assets/images/module-four/visually.png',
@@ -51,8 +49,7 @@ export class ModuleFourPage {
     },
     {
       image: 'assets/images/module-four/sensorial.png',
-      link: '/modules/module-four-sensorial',
-      disabled: true,
+      link: '/modules/module-four',
     },
   ]
 }
