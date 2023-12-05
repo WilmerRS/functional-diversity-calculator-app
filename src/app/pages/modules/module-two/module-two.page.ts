@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import {
   FormControl,
   FormGroup,
@@ -18,6 +18,7 @@ import { BadgeTitleComponent } from 'src/app/components/badge-title/badge-title.
 import { ModuleCardComponent } from 'src/app/components/module-card/module-card.component';
 import { NextPageButtonComponent } from 'src/app/components/next-page-button/next-page-button.component';
 import { NotebookBackgroundComponent } from 'src/app/components/notebook-background/notebook-background.component';
+import { UserStateService } from 'src/app/services/user-state.service';
 
 type Genders = 'male' | 'female' | 'other';
 
@@ -125,4 +126,25 @@ export class ModuleTwoPage {
     ]),
     venue: new FormControl<string>('', [Validators.required]),
   });
+
+  private _userStateService = inject(UserStateService);
+
+  saveCharacterization() {
+    if (this.studentForm.invalid) {
+      return;
+    }
+
+    const value = this.studentForm.value;
+    this._userStateService.saveCharacterization({
+      name: value.name ?? '',
+      gender: value.gender ?? '',
+      otherAnswer: value.otherAnswer ?? '',
+      diversityType: value.diversityType ?? '',
+      semester: value.semester ?? 1,
+      career: value.career ?? '',
+      faculty: value.faculty ?? '',
+      venue: value.venue ?? '',
+    });
+    this._userStateService.clearEmailUser();
+  }
 }

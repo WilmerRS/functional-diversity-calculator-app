@@ -30,9 +30,7 @@ export class InclusionInTheClassroomPage {
 
   private _userStateService = inject(UserStateService);
 
-  constructor() {
-    this.emailControl.setValue(this._userStateService.email);
-  }
+  constructor() {}
 
   saveEmailUser() {
     if (!this.emailControl.value) {

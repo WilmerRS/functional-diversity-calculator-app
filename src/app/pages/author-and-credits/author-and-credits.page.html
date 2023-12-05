@@ -28,6 +28,14 @@
           label="Página de inicio"
           link="/inclusion-in-the-classroom"
         />
+
+        <ion-button (click)="generateCSV()" class="generate-button">
+          <span class=""> Generar CSV </span>
+        </ion-button>
+
+        <ion-button (click)="clearData()" class="remove-button">
+          <span class=""> Limpiar datos </span>
+        </ion-button>
       </footer>
     </section>
   </main>

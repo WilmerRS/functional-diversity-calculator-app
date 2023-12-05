@@ -41,5 +41,33 @@
 .footer {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-top: 3.5rem;
+}
+
+.generate-button {
+  --background: #97d070;
+  --background-activated: #97d07077;
+  --background-hover: #97d07077;
+  --color: white;
+  font-weight: 700;
+  font-size: 1.4rem;
+
+  & span {
+    padding: 0rem 2.5rem;
+  }
+}
+
+.remove-button {
+  --background: #9f292a;
+  --background-activated: #9f292a77;
+  --background-hover: #9f292a77;
+  --color: white;
+  font-weight: 700;
+  font-size: 1.4rem;
+
+  & span {
+    padding: 0rem 2.5rem;
+  }
 }
